@@ -10,3 +10,8 @@ enthalpy = PropsSI("H", "P", 50e5, "Q", 0, FLUID)
 entropy = PropsSI("S", "P", 1e5, "Q", 0, FLUID)
 rho_exp = get_rho(50e5, 280)
 print(f"rho={rho_exp} kg/m3 \nenthalpy={enthalpy/1e3} kJ/kg \nentropy={entropy/1e3} kJ/K")
+
+#como salvar com os tres comandos no terminal (atualizar na nuvem)
+#git add .
+#git commit -m "nome da alteração"
+#git push
