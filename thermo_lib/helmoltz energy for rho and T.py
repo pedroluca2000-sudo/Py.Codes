@@ -60,7 +60,6 @@ class IdealGasBackend(EOSBackend):
 # 2) Resolvedor P-H (Newton 2x2 com Jacobiano numérico)
 # ============================================================
 
-tole = 
 
 @dataclass
 class PHFlashOptions:
