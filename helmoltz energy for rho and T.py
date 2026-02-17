@@ -44,8 +44,8 @@ class EOSBackend:
 
 @dataclass
 class IdealGasBackend(EOSBackend):
-    R: float = 287.0        # [J/(kg.K)] -> ar seco ~ 287
-    cp: float = 1006.0      # [J/(kg.K)] -> ar seco ~ 1006
+    R: float = 188.918        # [J/(kg.K)] -> ar seco ~ 287
+    cp: float = 877      # [J/(kg.K)] -> ar seco ~ 1006
     T_ref: float = 298.15   # [K]
     h_ref: float = 0.0      # [J/kg] entalpia na referência (ajustável)
 
@@ -206,6 +206,7 @@ def ph_flash(
 # ============================================================
 # 3) Exemplo de uso com GÁS IDEAL (teste de sanidade)
 # ============================================================
+
 
 if __name__ == "__main__":
     # "Ar seco" aproximado:
