@@ -61,13 +61,13 @@ alpha0 = Alpha0_ShortPolar(has_ln_delta=True, a0_eval_func=a0_eval)
 
 # Abaixo, demonstro a montagem; substitua os arrays [] pelos valores do paper.
 n_list      : List[float] = [0.88045, -2.4235, 0.38237, 0.068917, 0.00020367, 0.13122, 0.46032, -0.0036985, -0.23263, -0.00042859, -0.042810]          # 12 coeficientes
-d_list      : List[float] = [ 1, 1, 1, 2, 3, 3,   2, 2, 4, 4, 3, 5 ]          # expoentes δ
-t_list      : List[float] = [ 0, 1, 2, 2, 1, 3,   1, 3, 1, 2, 4, 2 ]          # expoentes τ
-c_list      : List[float] = [0.0]*12          # pode ser 0 na short polar
-alpha_list  : List[float] = [1.25, 1.10, 1.60, 1.40, 1.80, 1.50]          # parâmetros dos termos exponenciais
-beta_list   : List[float] = [0.85, 1.20, 0.90, 1.10, 1.30, 1.00]
-gamma_list  : List[float] = [1.00, 0.95, 1.05, 1.10, 0.90, 1.00]
-eps_list    : List[float] = [1.00, 1.05, 0.95, 1.10, 0.90, 1.00]
+d_list      : List[float] = []          # expoentes δ
+t_list      : List[float] = []          # expoentes τ
+c_list      : List[float] = []          # pode ser 0 na short polar
+alpha_list  : List[float] = []          # parâmetros dos termos exponenciais
+beta_list   : List[float] = []
+gamma_list  : List[float] = []
+eps_list    : List[float] = []
 
 def build_terms():
     terms = []
